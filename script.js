@@ -20,8 +20,8 @@ const values = [
 const categories = {
   rhyme: ["place", "space", "interface", "vase"],
   autocorrect: ["grade", "grate", "graze", "grave"],
-  grace_: ["amazing", "saving", "fall from", "state of"],
-  _grace: ["period", "land", "ful", "less"],
+  _grace: ["amazing", "saving", "fall from", "state of"],
+  grace_: ["period", "land", "ful", "less"],
 };
 const categoryDisplayNames = {
   rhyme: "words that rhyme with grace",

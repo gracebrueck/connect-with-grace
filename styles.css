@@ -157,16 +157,23 @@ button:hover {
   flex-direction: column;
 }
 
-
 /* For very small screens (Mobile Portrait and smaller devices) */
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   /* Keeping the 4 columns intact */
+  body {
+    max-width: 95vw;
+  }
   .grid {
     grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .container {
     padding: 10px;
+    align-items: center;
   }
 
   h1 {
@@ -192,6 +199,10 @@ button:hover {
   button {
     font-size: 10px;
     padding: 6px 12px;
+  }
+
+  #result {
+    font-size: 14px; /* Reduce result text size */
   }
 }
 

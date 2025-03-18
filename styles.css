@@ -156,3 +156,64 @@ button:hover {
   margin-bottom: 10px;
   flex-direction: column;
 }
+
+
+/* For very small screens (Mobile Portrait and smaller devices) */
+@media (max-width: 480px) {
+  /* Keeping the 4 columns intact */
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .category-title {
+    font-size: 14px;
+  }
+
+  .category-values {
+    font-size: 12px;
+  }
+
+  .solved-categories {
+    padding: 5px;
+  }
+
+  .solved-categories .category-item {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+}
+
+/* For larger screens like tablets, desktops */
+@media (min-width: 481px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .category-title {
+    font-size: 16px;
+  }
+
+  .category-values {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

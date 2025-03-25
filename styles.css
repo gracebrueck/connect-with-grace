@@ -110,7 +110,7 @@ button:hover {
 #reset-Button {
   margin-top: 20px;
 }
-/ .solved-categories {
+.solved-categories {
   display: flex;
   justify-content: flex-start;
   gap: 20px;

@@ -26,7 +26,7 @@ h1 {
   margin: 20px 0;
 }
 .grid div {
-  padding: 15px;
+  padding: 3%;
   background-color: rgba(255, 182, 193, 0.5);
   text-align: center;
   cursor: pointer;
@@ -158,26 +158,32 @@ button:hover {
 }
 
 /* For very small screens (Mobile Portrait and smaller devices) */
-@media (max-width: 320px) {
-  /* Keeping the 4 columns intact */
+@media (max-width: 100vw) {
   body {
     max-width: 95vw;
+    padding: 10px; /* Add padding to avoid edge overflow */
   }
+  
   .grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2px;
-    justify-content: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    grid-template-columns: repeat(4, minmax(70px, 1fr)); /* Ensure boxes are wide enough */
+    gap: 5px; /* Reduce gap to save space */
+    width: 100%; /* Ensure grid takes up full width */
+  }
+
+  .grid div {
+    font-size: 12px; /* Reduce font size */
+    display: flex; /* Make grid items flexible */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    overflow: hidden; /* Ensure content stays inside the box */
   }
 
   .container {
     padding: 10px;
-    align-items: center;
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 18px; /* Smaller title */
   }
 
   .category-title {
@@ -197,19 +203,24 @@ button:hover {
   }
 
   button {
-    font-size: 10px;
-    padding: 6px 12px;
+    font-size: 12px; /* Adjust button font size */
+    padding: 8px 16px;
   }
 
   #result {
-    font-size: 14px; /* Reduce result text size */
+    font-size: 14px;
   }
 }
-
-/* For larger screens like tablets, desktops */
-@media (min-width: 481px) {
+/* For medium-sized screens (like tablets and small desktops) */
+@media (min-width: 481px) and (max-width: 768px) {
   .grid {
-    grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
+    grid-template-columns: repeat(4, minmax(100px, 1fr)); /* Ensure boxes fit well on medium screens */
+    gap: 10px; /* Add a bit more gap between the boxes */
+  }
+
+  .grid div {
+    padding: 12px; /* Increase padding slightly for better spacing */
+    font-size: 14px; /* Adjust font size for readability */
   }
 
   h1 {
@@ -226,5 +237,10 @@ button:hover {
 
   button {
     font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #result {
+    font-size: 16px;
   }
 }

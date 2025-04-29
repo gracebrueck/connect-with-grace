@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
 }
 h1 {
-  color: #005b73;
+  color: #383838;
   margin-bottom: 10px;
 }
 .grid {
@@ -27,30 +27,33 @@ h1 {
 }
 .grid div {
   padding: 3%;
-  background-color: rgba(255, 182, 193, 0.5);
+
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border: 2px solid #383838;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
 }
 .grid div:hover {
-  background-color: rgba(240, 89, 126, 0.6);
+  background-color: #383838;
+  color: #FFFFFF;
 }
 .grid div.selected {
-  background-color: #ee4128;
+  background-color: #383838;
   color: #ffffff;
 }
 .grid div.correct {
-  background-color: #66a543;
+  background-color: #383838;
+  color: #ffffff;
 }
 .grid div.incorrect {
-  background-color: #ee4128;
+  background-color: #383838;
   color: #ffffff;
 }
 button {
-  background-color: #f26e24;
+  background-color: #383838;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -61,12 +64,13 @@ button {
 }
 
 button:hover {
-  background-color: #ee4128;
+  background-color: #383838;
+  color: #FFFFFF;
 }
 
 #result {
   font-size: 18px;
-  color: green;
+  color: #383838;
   margin-top: 20px;
 }
 #categories {
@@ -76,28 +80,28 @@ button:hover {
 .category-title {
   font-size: 20px;
   font-weight: bold;
-  color: #4caf50;
+  color: #383838;
   margin-top: 20px;
 }
 
 .category-values {
   font-size: 18px;
-  color: #333;
+  color: #383838;
   margin-top: 10px;
 }
 
 #resetButton {
   background-color: transparent;
-  color: #ee4128;
+  color: #383838;
   font-size: 14px;
   padding: 8px 16px;
   border-radius: 5px;
   margin-top: 20px;
-  border: 1px solid #ee4128;
+  border: 1px solid #383838;
 }
 
 #resetButton:hover {
-  background-color: rgba(238, 65, 40, 0.4);
+  background-color: rgba(56, 56, 56, 0.4);
 }
 
 .buttons {
@@ -123,7 +127,7 @@ button:hover {
 .solved-categories .category-item {
   padding: 10px 20px;
   border-radius: 5px;
-  color: #333;
+  color: #383838;
   font-weight: bold;
   font-size: 16px;
   display: flex;
@@ -134,25 +138,29 @@ button:hover {
 }
 
 .solved-categories .rhyme {
-  background-color: #feef79;
+  background-color: #383838;
+  color: #FFFFFF;
   margin-bottom: 10px;
   flex-direction: column;
 }
 
 .solved-categories .autocorrect {
-  background-color: #79b05b;
+  background-color: #383838;
+  color: #FFFFFF;
   margin-bottom: 10px;
   flex-direction: column;
 }
 
 .solved-categories .grace_ {
-  background-color: #5f9bab;
+  background-color: #383838;
+  color: #FFFFFF;
   margin-bottom: 10px;
   flex-direction: column;
 }
 
 .solved-categories ._grace {
-  background-color: #b86e90;
+  background-color: #383838;
+  color: #FFFFFF;
   margin-bottom: 10px;
   flex-direction: column;
 }

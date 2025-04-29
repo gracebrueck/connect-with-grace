@@ -168,7 +168,7 @@ button:hover {
 /* For very small screens (Mobile Portrait and smaller devices) */
 @media (max-width: 480px) {
   body {
-    max-width: 65vw;
+    max-width: 100vw;
     padding: 10px; /* Add padding to avoid edge overflow */
   }
   

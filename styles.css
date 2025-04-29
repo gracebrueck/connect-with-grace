@@ -175,7 +175,7 @@ button:hover {
   .grid {
     grid-template-columns: repeat(4, minmax(50px, 1fr)); /* Ensure boxes are wide enough */
     gap: 5px; 
-    width: 45vw; 
+    width: 100vw; 
   }
 
   .grid div {
